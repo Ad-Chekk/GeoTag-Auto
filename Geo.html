@@ -42,8 +42,9 @@ function getLocation() {
 function showPosition(position) {
   x.innerHTML = "Latitude: " + position.coords.latitude + 
   "<br>Longitude: " + position.coords.longitude +"<br>"+
-  position.coords.altitude+"<br>"+Current_DT
-  position.coords.altitudeAccuracy;
+  position.coords.altitude+"<br>"+ position.coords.altitudeAccuracy +"<br>" +Current_DT
+  ;
+
   let lat="Latitude: "+position.coords.latitude;
   let long="Longitude: "+ position.coords.longitude;
   let alt="Altitude: "+ position.coords.altitude;
